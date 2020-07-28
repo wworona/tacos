@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Audio</title>
+  </head>
+  <body>
+
+    <script>
+      function playCrunchy() {
+        var audio = document.getElementById("crunchy");
+        audio.play();
+      }
+	  
+	  function playSoft() {
+        var audio = document.getElementById("soft");
+        audio.play();
+      }
+    </script>
+<center>
+    <input type="image" src="/Crunchy.png" onclick="playCrunchy()">
+	<input type="image" src="/Soft.png" onclick="playSoft()">
+</center>
+
+	<audio id="crunchy" src="/crunchy.ogg"></audio>
+	<audio id="soft" src="/soft.ogg"></audio>
+
+  </body>
+</html>
